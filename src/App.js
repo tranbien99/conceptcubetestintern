@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Banner from './components/Banner';
+import BestProduct from './components/BestProduct';
+import BrandStory from './components/BrandStory';
+import Footer from './components/Footer';
+import HappenedsIssue from './components/HappenedsIssue';
+import Navbar from './components/Navbar';
+import Production from './components/Production';
+import ProductPage from './components/ProductPage';
+import WhatHappened from './components/WhatHappened';
+import GlobalStyle from './globalStyle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle/>
+      <Navbar/>
+      <Banner />
+      <Production/>
+      <BestProduct />
+      <ProductPage />
+      <BrandStory />
+      <HappenedsIssue/>
+      <WhatHappened/>
+      <Footer/>
+    </>
   );
 }
 
